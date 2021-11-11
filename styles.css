@@ -1,26 +1,218 @@
-*{
-    margin: 0;
-    padding: 0;
+#clock {
+    position:relative;
+    width:10em;
+    height:10em;
+    line-height:1.5em;
+    margin:1em auto;
+    border:0.0625em solid #444;
+    border-radius:50%;
+    box-shadow:
+      inset 0.125em 0.25em 0.5em #0005,
+      -0.25em -0.5em 0.5em #FFFC,
+      0 0 0.0625em 0.5em #777,
+      0 0 0.0625em 0.5625em #000,
+      0.125em 0.25em 0.5em 0.5em #0004;
 }
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+#clock *,
+#clock *:before,
+#clock *:after {
+    box-sizing:border-box;
+    background-clip:padding-box;
 }
-#clock-body{
+
+#clock:before,
+#clock:after,
+#clock b:before,
+#clock b:after {
+    position:absolute;
+    width:1.5em;
+    text-align:center;
+}
+
+#clock b {
+    position:absolute;
+    top:4.25em;
+    width:100%;
+}
+
+#clock:before,
+#clock:after {
+    left:4.25em;
+}
+
+#clock:before {
+    content:"12";
+    top:0;
+}
+
+#clock:after {
+    content:"6";
+    bottom:0;
+}
+
+#clock b:before {
+    left:0;
+    content:"9";
+}
+
+#clock b:after {
+    right:0;
+    content:"3";
+}
+
+#clock span {
+    position:absolute;
+    top:0;
+    left:4.9375em;
+    width:0.125em;
+    height:100%;
+}
+
+#clock span + span {
+    transform:rotate(90deg);
+}
+
+#clock i,
+#clock span:before,
+#clock span:after {
+    position:absolute;
+    top:0.5em;
+    left:0;
+    width:100%;
+    height:9em;
+}
+
+#clock span:before,
+#clock span:after {
+    content:"";
+    border-style:solid;
+    border-color:#000;
+    border-width:0.5em 0;
+    transform:rotate(30deg);
+}
+
+#clock span:after {
+    transform:rotate(60deg);
+}
+
+#clock i {
+    z-index:2;
+    left:4.85em;
+    width:0.3em;
+    background-color:#000;
+    border:solid transparent;
+    border-width:0 0 3em;
+    border-radius:40%;
+}
+
+#clock i:first-of-type {
+    border-width:1.5em 0 3em;
+}
+
+#clock i:last-of-type {
+    background-color:#F00;
+}
+
+#clock i:last-of-type:before,
+#clock i:last-of-type:after {
+    content:"";
+    position:absolute;
+    border-radius:50%;
+}
+
+#clock i:last-of-type:before {
+    top:4em;
+    left:-0.375em;
+    width:1em;
+    height:1em;
+    background:#000;
+}
+
+#clock i:last-of-type:after {
+    top:4.25em;
+    left:-0.125em;
+    width:0.5em;
+    height:0.5em;
+    background:#ABC;
+}
+/*:root{
+    --degree: 80deg;
+    --color: red;
+}*/
+/*#clock-body{*/
+    /*height:200px;
+    width:200px;
+    border-radius:50%;
+    background: conic-gradient(
+        var(--color) var(--degree), transparent calc(var(--degree) + 0.5deg) 20%);*/
+    /*box-sizing: border-box;
     position: relative;
     margin-top: 120px;
     width: 350px;
     height: 350px;
-    border-radius: 100%;
+    border-radius: 50%;
     border: 4px solid #000;
-}
-#clock-show-time{
+    background-color: #b2b2b2;
+}*/
+/*#clock-show-time{
+    /*height:84%;
+    width:84%;
+    top:8%;
+    left:8%;
+    position:relative;
+    border-radius:50%;
+    background:#D3D3D3;*/
+    /*overflow: hidden;
     position: absolute;
     top: 2px;
     left: 2px;
     width: 340px;
     height: 340px;
-    border-radius: 100%;
-    border: 3px solid #000;
+    border-radius: 50%;
+    border: 3px solid red;
+    transform: translate(20px,20px);
+}*/
+/*#clock-show-time::before{
+    box-sizing: border-box;
+    display: block;
+    border: solid 1px red;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    transform: skewX(-30deg);
+    content: '';
+}*/
+/*#clock-face-one{
+    position: absolute;
+    box-sizing: border-box;
+    top: 6px;
+    left: 165px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    transform-origin: 50% 50%;
+    transform: translate(0, 0) rotate(0deg);
 }
+#clock-face-two{
+    position: absolute;
+    box-sizing: border-box;
+    top: 6px;
+    left: 165px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    transform-origin: 50% 50%;
+    transform: translate(90px, 30px) rotate(35deg);
+}
+#clock-face-three{
+    position: absolute;
+    box-sizing: border-box;
+    top: 6px;
+    left: 165px;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    transform-origin: 50% 50%;
+    transform: translate(150px, 100px) rotate(70deg);
+}*/
