@@ -74,14 +74,14 @@
 
 #clock span {
     position:absolute;
-    top:0;
+    top:0.2em;
     left:4.77em;
     width:0.53em;
     /*padding-top: 1.4em;*/
-    height:100%;
+    height:96%;
     /*background-color: aqua;*/
     /*transform:rotate(90deg);*/
-    z-index: 10;
+    z-index: -10;
 }
 
 #clock span + span {
