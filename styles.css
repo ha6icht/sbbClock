@@ -4,14 +4,13 @@
     height:10em;
     line-height:1.5em;
     margin:1em auto;
-    border:0.0625em solid #444;
+    border:0.13rem solid #474747;
     border-radius:50%;
-    box-shadow:
-      inset 0.125em 0.25em 0.5em #0005,
-      -0.25em -0.5em 0.5em #FFFC,
-      0 0 0.0625em 0.5em #777,
-      0 0 0.0625em 0.5625em #000,
-      0.125em 0.25em 0.5em 0.5em #0004;
+    box-shadow:inset 0 0 0.09rem #474747;
+      /*-0.25em -0.5em 0.5em #FFFC,
+      0 0 0.0225em 0.05em #474747,*/
+      /*0 0 0.0025em 0.025em #000,*/
+      /*0.0125em 0.025em 0.05em 0.05em #0004;*/
 }
 
 #clock *,
@@ -26,47 +25,63 @@
 #clock b:before,
 #clock b:after {
     position:absolute;
-    width:1.5em;
+    width:1.5rem;
     text-align:center;
 }
 
 #clock b {
     position:absolute;
-    top:4.25em;
+    top:4.74em;
     width:100%;
 }
 
 #clock:before,
 #clock:after {
-    left:4.25em;
+    left:4.74em;
 }
 
 #clock:before {
-    content:"12";
-    top:0;
+    content:"";
+    top: 0.23em;
+    width: 0.5em;
+    height: 1.4em;
+    background-color: #000;
 }
 
 #clock:after {
-    content:"6";
-    bottom:0;
+    content:"";
+    bottom:0.23em;
+    width: 0.5em;
+    height: 1.4em;
+    background-color: #000;
 }
 
 #clock b:before {
-    left:0;
-    content:"9";
+    left:0.23em;
+    content:"";
+    width: 1.4em;
+    height: 0.5em;
+    background-color: #000;
 }
 
 #clock b:after {
-    right:0;
-    content:"3";
+    right:0.23em;
+    content:"";
+    width: 1.4em;
+    height: 0.5em;
+    background-color: #000;
 }
 
 #clock span {
     position:absolute;
     top:0;
-    left:4.9375em;
-    width:0.125em;
+    left:4.77em;
+    width:0.53em;
+    /*padding-top: 1.4em;*/
     height:100%;
+    /*background-color: aqua;*/
+    /*transform:rotate(90deg);*/
+    z-index: 10;
 }
 
 #clock span + span {
@@ -77,10 +92,14 @@
 #clock span:before,
 #clock span:after {
     position:absolute;
-    top:0.5em;
+    top:0;
     left:0;
-    width:100%;
-    height:9em;
+    width:90%;
+    height:100%;
+    content: "";
+    /*margin-top: 0.25em;
+    margin-bottom: 0.25em;*/
+    /*background-color: bisque;*/
 }
 
 #clock span:before,
@@ -88,7 +107,7 @@
     content:"";
     border-style:solid;
     border-color:#000;
-    border-width:0.5em 0;
+    border-width:1.4em 0;
     transform:rotate(30deg);
 }
 
