@@ -2,8 +2,8 @@
     position:relative;
     width:10em;
     height:10em;
-    line-height:1.5em;
-    margin:1em auto;
+    line-height:1.2em;
+    margin:0 auto;
     border:0.13rem solid #474747;
     border-radius:50%;
     box-shadow:inset 0 0 0.09rem #474747;
@@ -25,8 +25,8 @@
 #clock b:before,
 #clock b:after {
     position:absolute;
-    width:1.5rem;
-    text-align:center;
+    width:1.6rem;
+    /*text-align:center;*/
 }
 
 #clock b {
@@ -114,7 +114,148 @@
 #clock span:after {
     transform:rotate(60deg);
 }
-
+#clock .twelfth{
+    /*box-sizing: border-box;*/
+    position:absolute;
+    top: 0;
+    left: 4.92em;
+    width: 0.16em;
+    height: 96%;
+    /*background-color: bisque;*/
+    z-index: 10;
+    /*transform: rotate(6deg);*/
+    /*visibility: hidden;*/
+}
+#clock .twelfth::before,
+#clock .twelfth::after{
+    /*box-sizing: border-box;*/
+    position:absolute;
+    top: 0.23em;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-style:solid;
+    border-color:#000;
+    border-width:0.23em 0;
+    /*background-color: rgb(126, 123, 119);*/
+    z-index: -10;
+}
+#clock .first + .first{
+    transform: rotate(12deg);
+}
+#clock .first::before,
+#clock .first::after{
+    content: "";
+    transform: rotate(6deg);
+}
+#clock .first::after{
+    transform: rotate(12deg);
+}
+/*#clock .second{
+    /*box-sizing: border-box;*/
+    /*position:absolute;
+    top: 0;
+    left: 4.92em;
+    width: 0.16em;
+    height: 100%;
+    background-color: bisque;
+    z-index: 10;
+}*/
+#clock .second + .second{
+    transform: rotate(12deg);
+}
+#clock .second::before,
+#clock .second::after{
+    content: "";
+    transform: rotate(36deg);
+}
+#clock .second::after{
+    transform: rotate(42deg);
+}
+/*#clock .third{
+    /*box-sizing: border-box;*/
+    /*position:absolute;
+    top: 0;
+    left: 4.92em;
+    width: 0.16em;
+    height: 100%;
+    background-color: bisque;
+    z-index: 10;
+}*/
+#clock .third + .third{
+    transform: rotate(12deg);
+}
+#clock .third::before,
+#clock .third::after{
+    content: "";
+    transform: rotate(66deg);
+}
+#clock .third::after{
+    transform: rotate(72deg);
+}
+/*#clock .fourth{
+    /*box-sizing: border-box;*/
+    /*position:absolute;
+    top: 0;
+    left: 4.92em;
+    width: 0.16em;
+    height: 100%;
+    background-color: bisque;
+    z-index: 10;
+}*/
+#clock .fourth + .fourth{
+    transform: rotate(12deg);
+}
+#clock .fourth::before,
+#clock .fourth::after{
+    content: "";
+    transform: rotate(96deg);
+}
+#clock .fourth::after{
+    transform: rotate(102deg);
+}
+/*#clock .fifth{
+    /*box-sizing: border-box;*/
+    /*position:absolute;
+    top: 0;
+    left: 4.92em;
+    width: 0.16em;
+    height: 100%;
+    background-color: bisque;
+    z-index: 10;
+}*/
+#clock .fifth + .fifth{
+    transform: rotate(12deg);
+}
+#clock .fifth::before,
+#clock .fifth::after{
+    content: "";
+    transform: rotate(126deg);
+}
+#clock .fifth::after{
+    transform: rotate(132deg);
+}
+/*#clock .sixth{
+    /*box-sizing: border-box;*/
+    /*position:absolute;
+    top: 0;
+    left: 4.92em;
+    width: 0.16em;
+    height: 100%;
+    background-color: bisque;
+    z-index: 10;
+}*/
+#clock .sixth + .sixth{
+    transform: rotate(12deg);
+}
+#clock .sixth::before,
+#clock .sixth::after{
+    content: "";
+    transform: rotate(156deg);
+}
+#clock .sixth::after{
+    transform: rotate(162deg);
+}
 #clock i {
     z-index:2;
     left:4.85em;
