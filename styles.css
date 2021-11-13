@@ -4,9 +4,9 @@
     height:10em;
     /*line-height:1.2em;*/
     margin:0 auto;
-    border:0.13rem solid #474747;
+    border:0.13em solid #474747;
     border-radius:50%;
-    box-shadow:inset 0 0 0.14rem #474747;
+    box-shadow:inset 0 0 0.14em #474747;
 }
 
 #clock *,
