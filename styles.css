@@ -2,11 +2,11 @@
     position:relative;
     width:10em;
     height:10em;
-    line-height:1.2em;
+    /*line-height:1.2em;*/
     margin:0 auto;
     border:0.13rem solid #474747;
     border-radius:50%;
-    box-shadow:inset 0 0 0.09rem #474747;
+    box-shadow:inset 0 0 0.13rem #474747;
 }
 
 #clock *,
@@ -37,7 +37,7 @@
 
 #clock:before {
     content:"";
-    top: 0.19em;
+    top: 0.20em;
     width: 0.5em;
     height: 1.5em;
     background-color: #000;
@@ -54,7 +54,7 @@
 #clock b:before {
     left:0.17em;
     content:"";
-    width: 1.4em;
+    width: 1.5em;
     height: 0.5em;
     background-color: #000;
 }
@@ -62,7 +62,7 @@
 #clock b:after {
     right:0.23em;
     content:"";
-    width: 1.4em;
+    width: 1.5em;
     height: 0.5em;
     background-color: #000;
 }
@@ -70,8 +70,8 @@
 #clock span {
     position:absolute;
     top:0.2em;
-    left:4.77em;
-    width:0.53em;
+    left:4.74em;
+    width:0.51em;
     height:96%;
     z-index: -10;
 }
@@ -239,7 +239,7 @@ strong::after {
     width: 0.2em;
     height: 4.4em;
     z-index: 10;
-    /*animation: rotate 1s linear infinite;*/
+    /*animation: rotate 10s linear infinite;*/
     transform-origin: 0.1em 3.2em;
 }
 #clock i:last-of-type {
@@ -250,7 +250,7 @@ strong::after {
     height: 1.3em;
     border-radius: 50%;
     z-index: 100;
-    /*animation: rotate 1s linear infinite;*/
+    /*animation: rotate 10s linear infinite;*/
     transform-origin: 0.65em 3.35em;
 }
 @keyframes rotate {
