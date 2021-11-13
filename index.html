@@ -14,6 +14,12 @@
             </noscript> 
           <!-- .clockFace -->
         </div>
+        <footer>&copy;&nbsp;<span id="year"></span>&nbsp;Rolf Karlen</footer>
         <script src="./main.js"></script>
+        <script>
+            let year = document.getElementById('year');
+            const date = new Date();
+            year.innerHTML = date.getFullYear();
+        </script>
     </body>
 </html>
