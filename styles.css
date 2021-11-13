@@ -1,12 +1,15 @@
+body{
+    font-family: sans-serif;
+}
 #clock {
     position:relative;
-    width:10em;
-    height:10em;
+    width:50em;
+    height:50em;
     /*line-height:1.2em;*/
     margin:0 auto;
-    border:0.13em solid #474747;
+    border:0.65em solid #474747;
     border-radius:50%;
-    box-shadow:inset 0 0 0.14em #474747;
+    box-shadow:inset 0 0 0.7em #474747;
 }
 
 #clock *,
@@ -21,58 +24,58 @@
 #clock b:before,
 #clock b:after {
     position:absolute;
-    width: 1.6em;
+    width: 8em;
 }
 
 #clock b {
     position:absolute;
-    top:4.74em;
+    top:23.7em;
     width:100%;
 }
 
 #clock:before,
 #clock:after {
-    left:4.74em;
+    left:23.7em;
 }
 
 #clock:before {
     content:"";
-    top: 0.17em;
-    width: 0.5em;
-    height: 1.5em;
+    top: 0.85em;
+    width: 2.5em;
+    height: 7.5em;
     background-color: #000;
 }
 
 #clock:after {
     content:"";
-    bottom:0.17em;
-    width: 0.5em;
-    height: 1.5em;
+    bottom:0.85em;
+    width: 2.5em;
+    height: 7.5em;
     background-color: #000;
 }
 
 #clock b:before {
-    left:0.17em;
+    left:0.85em;
     content:"";
-    width: 1.5em;
-    height: 0.5em;
+    width: 7.5em;
+    height: 2.5em;
     background-color: #000;
 }
 
 #clock b:after {
-    right:0.17em;
+    right:0.85em;
     content:"";
-    width: 1.5em;
-    height: 0.5em;
+    width: 7.5em;
+    height: 2.5em;
     background-color: #000;
 }
 
 #clock span {
     position:absolute;
-    top:0.17em;
-    left:4.74em;
-    width:0.5em;
-    height: 9.67em;
+    top:0.85em;
+    left:23.7em;
+    width:2.5em;
+    height: 48.35em;
     z-index: -10;
 }
 
@@ -96,7 +99,7 @@
     content:"";
     border-style:solid;
     border-color:#000;
-    border-width:1.5em 0;
+    border-width:7.5em 0;
     transform:rotate(30deg);
 }
 
@@ -106,21 +109,21 @@
 #clock .twelfth{
     position:absolute;
     top: 0;
-    left: 4.93em;
-    width: 0.16em;
-    height: 9.63em;
+    left: 24.65em;
+    width: 0.8em;
+    height: 48.15em;
     z-index: 10;
 }
 #clock .twelfth::before,
 #clock .twelfth::after{
     position:absolute;
-    top: 0.17em;
+    top: 0.85em;
     left: 0;
     width: 100%;
     height: 100%;
     border-style:solid;
     border-color:#000;
-    border-width:0.23em 0;
+    border-width:1.15em 0;
     z-index: -10;
 }
 #clock .first + .first{
@@ -192,17 +195,17 @@
 #clock i {
     box-sizing: border-box;
     z-index:2;
-    left:4.74em;
-    width:0.6em;
+    left:23.7em;
+    width:3em;
 }
 
 #clock i:first-of-type {
     background-color: #000;
-    top: 1.68em;
-    width: 0.5em;
-    height: 4.62em;
+    top: 8.4em;
+    width: 2.5em;
+    height: 23.1em;
     /*animation: rotate 36s linear infinite;*/
-    transform-origin: 0.25em 3.35em;
+    transform-origin: 1.25em 16.75em;
 }
 
 strong{
@@ -210,50 +213,56 @@ strong{
     width: 100%;
     height: 100%;
     transform: scale(0.001);
-    transform-origin: 0.65em 3.35em;
+    transform-origin: 3.25em 16.75em;
 }
 strong::after {
     content: '';
     display: block;
-    width: 0.6em;
-    height: 0.6em;
+    width: 3em;
+    height: 3em;
     border-radius: 100%;
     background: rgba(255,128,128,0.75);
     transform: scale(1000);
 }
 #clock i:nth-of-type(2){
     background-color: #000;
-    top: 0.4em;
-    left: 4.75em;
-    width: 0.5em;
-    height: 5.9em;
+    top: 2em;
+    left: 23.75em;
+    width: 2.5em;
+    height: 29.5em;
     /*animation: rotate 30s linear infinite;*/
-    transform-origin: 0.25em 4.6em;
+    transform-origin: 1.25em 23em;
 }
 
 #clock i:nth-of-type(3){
     background-color: #F00;
     border-color: transparent;
-    top: 1.8em;
-    left: 4.9em;
-    width: 0.2em;
-    height: 4.4em;
+    top: 9em;
+    left: 24.5em;
+    width: 1em;
+    height: 22em;
     z-index: 10;
     /*animation: rotate 10s linear infinite;*/
-    transform-origin: 0.1em 3.2em;
+    transform-origin: 0.5em 16em;
 }
 #clock i:last-of-type {
     background-color:#F00;
-    top: 1.67em;
-    left: 4.35em;
-    width: 1.3em;
-    height: 1.3em;
+    top: 8.35em;
+    left: 21.75em;
+    width: 6.5em;
+    height: 6.5em;
     border-radius: 50%;
     z-index: 100;
     /*animation: rotate 10s linear infinite;*/
-    transform-origin: 0.65em 3.35em;
+    transform-origin: 3.25em 16.75em;
 }
 @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
+}
+footer{
+    font-size: small;
+    display: flex;
+    justify-content: center;
+    margin-top: 13em;
 }
