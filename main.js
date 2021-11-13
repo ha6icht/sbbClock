@@ -39,6 +39,9 @@
     clockElements[2].style.transform = 'rotate(' + (
       now.getSeconds() * 6
     ) + 'deg)';
+    clockElements[3].style.transform = 'rotate(' + (
+      now.getSeconds() * 6
+    ) + 'deg)';
   }
 
   clockUpdate();
