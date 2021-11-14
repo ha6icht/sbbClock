@@ -1,15 +1,16 @@
 body{
     font-family: sans-serif;
+    font-size: 1rem;
 }
 #clock {
     position:relative;
-    width:50em;
-    height:50em;
-    /*line-height:1.2em;*/
+    width:50rem;
+    height:50rem;
+    /*line-height:1.2rem;*/
     margin:0 auto;
-    border:0.65em solid #474747;
+    border:0.65rem solid #474747;
     border-radius:50%;
-    box-shadow:inset 0 0 0.7em #474747;
+    box-shadow:inset 0 0 0.7rem #474747;
 }
 
 #clock *,
@@ -24,58 +25,58 @@ body{
 #clock b:before,
 #clock b:after {
     position:absolute;
-    width: 8em;
+    width: 8rem;
 }
 
 #clock b {
     position:absolute;
-    top:23.7em;
+    top:23.7rem;
     width:100%;
 }
 
 #clock:before,
 #clock:after {
-    left:23.7em;
+    left:23.7rem;
 }
 
 #clock:before {
     content:"";
-    top: 0.85em;
-    width: 2.5em;
-    height: 7.5em;
+    top: 0.85rem;
+    width: 2.5rem;
+    height: 7.5rem;
     background-color: #000;
 }
 
 #clock:after {
     content:"";
-    bottom:0.85em;
-    width: 2.5em;
-    height: 7.5em;
+    bottom:0.85rem;
+    width: 2.5rem;
+    height: 7.5rem;
     background-color: #000;
 }
 
 #clock b:before {
-    left:0.85em;
+    left:0.85rem;
     content:"";
-    width: 7.5em;
-    height: 2.5em;
+    width: 7.5rem;
+    height: 2.5rem;
     background-color: #000;
 }
 
 #clock b:after {
-    right:0.85em;
+    right:0.85rem;
     content:"";
-    width: 7.5em;
-    height: 2.5em;
+    width: 7.5rem;
+    height: 2.5rem;
     background-color: #000;
 }
 
 #clock span {
     position:absolute;
-    top:0.85em;
-    left:23.7em;
-    width:2.5em;
-    height: 48.35em;
+    top:0.85rem;
+    left:23.7rem;
+    width:2.5rem;
+    height: 48.35rem;
     z-index: -10;
 }
 
@@ -99,7 +100,7 @@ body{
     content:"";
     border-style:solid;
     border-color:#000;
-    border-width:7.5em 0;
+    border-width:7.5rem 0;
     transform:rotate(30deg);
 }
 
@@ -109,21 +110,21 @@ body{
 #clock .twelfth{
     position:absolute;
     top: 0;
-    left: 24.65em;
-    width: 0.8em;
-    height: 48.15em;
+    left: 24.65rem;
+    width: 0.8rem;
+    height: 48.15rem;
     z-index: 10;
 }
 #clock .twelfth::before,
 #clock .twelfth::after{
     position:absolute;
-    top: 0.85em;
+    top: 0.85rem;
     left: 0;
     width: 100%;
     height: 100%;
     border-style:solid;
     border-color:#000;
-    border-width:1.15em 0;
+    border-width:1.15rem 0;
     z-index: -10;
 }
 #clock .first + .first{
@@ -195,17 +196,17 @@ body{
 #clock i {
     box-sizing: border-box;
     z-index:2;
-    left:23.7em;
-    width:3em;
+    left:23.7rem;
+    width:3rem;
 }
 
 #clock i:first-of-type {
     background-color: #000;
-    top: 8.4em;
-    width: 2.5em;
-    height: 23.1em;
+    top: 8.4rem;
+    width: 2.5rem;
+    height: 23.1rem;
     /*animation: rotate 36s linear infinite;*/
-    transform-origin: 1.25em 16.75em;
+    transform-origin: 1.25rem 16.75rem;
 }
 
 strong{
@@ -213,56 +214,56 @@ strong{
     width: 100%;
     height: 100%;
     transform: scale(0.001);
-    transform-origin: 3.25em 16.75em;
+    transform-origin: 3.25rem 16.75rem;
 }
 strong::after {
     content: '';
     display: block;
-    width: 3em;
-    height: 3em;
+    width: 3rem;
+    height: 3rem;
     border-radius: 100%;
     background: rgba(255,128,128,0.75);
     transform: scale(1000);
 }
 #clock i:nth-of-type(2){
     background-color: #000;
-    top: 2em;
-    left: 23.75em;
-    width: 2.5em;
-    height: 29.5em;
+    top: 2rem;
+    left: 23.75rem;
+    width: 2.5rem;
+    height: 29.5rem;
     /*animation: rotate 30s linear infinite;*/
-    transform-origin: 1.25em 23em;
+    transform-origin: 1.25rem 23rem;
 }
 
 #clock i:nth-of-type(3){
     background-color: #F00;
     border-color: transparent;
-    top: 9em;
-    left: 24.5em;
-    width: 1em;
-    height: 22em;
+    top: 9rem;
+    left: 24.5rem;
+    width: 1rem;
+    height: 22rem;
     z-index: 10;
     /*animation: rotate 10s linear infinite;*/
-    transform-origin: 0.5em 16em;
+    transform-origin: 0.5rem 16rem;
 }
 #clock i:last-of-type {
     background-color:#F00;
-    top: 8.35em;
-    left: 21.75em;
-    width: 6.5em;
-    height: 6.5em;
+    top: 8.35rem;
+    left: 21.75rem;
+    width: 6.5rem;
+    height: 6.5rem;
     border-radius: 50%;
     z-index: 100;
     /*animation: rotate 10s linear infinite;*/
-    transform-origin: 3.25em 16.75em;
+    transform-origin: 3.25rem 16.75rem;
 }
 @keyframes rotate {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
 footer{
-    font-size: small;
+    font-size: 1rem;
     display: flex;
     justify-content: center;
-    margin-top: 13em;
+    margin-top: 13rem;
 }
