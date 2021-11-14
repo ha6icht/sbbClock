@@ -1,6 +1,6 @@
 body{
     font-family: sans-serif;
-    font-size: 1rem;
+    /*font-size: 0.4rem;*/
 }
 #clock {
     position:relative;
@@ -266,4 +266,9 @@ footer{
     display: flex;
     justify-content: center;
     margin-top: 13rem;
+}
+@media screen and (max-width: 420px) {
+    body{
+        font-size: 0.4rem;
+    }
 }
