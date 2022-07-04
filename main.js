@@ -33,9 +33,16 @@
     clockElements[0].style.transform = 'rotate(' + (
       now.getHours() * 30 + (Math.floor(now.getMinutes() / 12) * 6)
     ) + 'deg)';
+	/*console.log(Math.floor(now.getMinutes()));
+	clockElements[0].style.transform = 'rotate(' + (
+      3 * 30 + (Math.floor(5 / 12) * 6)
+    ) + 'deg)';*/
     clockElements[1].style.transform = 'rotate(' + (
       now.getMinutes() * 6
     ) + 'deg)';
+	/*clockElements[1].style.transform = 'rotate(' + (
+      15 * 6
+    ) + 'deg)';*/
     clockElements[2].style.transform = 'rotate(' + (
       now.getSeconds() * 6
     ) + 'deg)';
