@@ -201,7 +201,7 @@ body{
 
 #clock i:first-of-type {
     background-color: #000;
-    top: 8.4rem;
+    top: 8.2rem;
     width: 2.5rem;
     height: 23.1rem;
     /*animation: rotate 36s linear infinite;*/
@@ -227,7 +227,7 @@ strong::after {
 #clock i:nth-of-type(2){
     background-color: #000;
     top: 2rem;
-    left: 23.75rem;
+    left: 23.7rem;
     width: 2.5rem;
     height: 29.5rem;
     /*animation: rotate 30s linear infinite;*/
