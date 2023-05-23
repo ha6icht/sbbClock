@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="author" content="Rolf Karlen">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>SBB Clock</title>
+        <link href="./styles.css" rel="stylesheet">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-S5LYHH7T3K"></script>
+		<script>
+		  window.dataLayer = window.dataLayer || [];
+		  function gtag(){dataLayer.push(arguments);}
+		  gtag('js', new Date());
+
+		  gtag('config', 'G-S5LYHH7T3K');
+		</script>
+    </head>
+    <body>
+        <div id="clock">
+            <noscript>
+                <p>
+                    The page clock requires JavaScript to function, please revisit in a scripting capable browser.
+                </p>
+            </noscript> 
+          <!-- .clockFace -->
+        </div>
+        <footer>&copy;&nbsp;<span id="year"></span>&nbsp;Rolf Karlen</footer>
+        <script src="./main.js"></script>
+        <script>
+            let year = document.getElementById('year');
+            const date = new Date();
+            year.innerHTML = date.getFullYear();
+        </script>
+    </body>
+</html>
